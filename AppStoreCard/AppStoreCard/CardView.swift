@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CardView: View {
+    @Environment(\.colorScheme) var colorScheme
     var title: String
     var subTitle: String
     var body: some View {
@@ -21,7 +22,7 @@ struct CardView: View {
             }.padding()
         }
         .frame(minWidth: nil, idealWidth: nil, maxWidth: .infinity, minHeight: 350, idealHeight: nil, maxHeight: 350, alignment: .center)
-        .background(Color.white)
+        .background(colorScheme == .dark ? Color.secondary : Color.white)
         .cornerRadius(10)
         .shadow(radius: 15)
     }
