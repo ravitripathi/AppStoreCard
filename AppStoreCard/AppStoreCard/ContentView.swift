@@ -22,12 +22,22 @@ struct ContentView: View {
         }()
 
     var body: some View {
-        List(cardData) { cD in
-            Button(action: { self.pressed.toggle() }) {
-                CardView(title: cD.title, subTitle: cD.subTitle)
-                    .animation(.easeInOut)
-            }.buttonStyle(tapBounceButtonStyle())
+        ScrollView {
+            LazyVStack {
+                ForEach(cardData) { cD in
+                    Button(action: { self.pressed.toggle() }) {
+                        CardView(title: cD.title, subTitle: cD.subTitle)
+                    }.buttonStyle(tapBounceButtonStyle())
+                    .padding()
+                }
+            }
         }
+//        Got a slightly better performance in LazyVStack
+//        List(cardData) { cD in
+//            Button(action: { self.pressed.toggle() }) {
+//                CardView(title: cD.title, subTitle: cD.subTitle)
+//            }.buttonStyle(tapBounceButtonStyle())
+//        }
     }
 }
 
@@ -36,6 +46,7 @@ struct tapBounceButtonStyle: ButtonStyle {
   func makeBody(configuration: Self.Configuration) -> some View {
     configuration.label
         .scaleEffect(configuration.isPressed ? 0.95 : 1)
+        .animation(.easeInOut)
   }
 }
 
