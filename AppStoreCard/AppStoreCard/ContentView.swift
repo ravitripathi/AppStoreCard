@@ -11,12 +11,6 @@ struct ContentView: View {
     @State private var pressed: Bool = false
         var cardData: [CardData] = {
             
-            var pika: Int?
-            var chu: Int?
-            
-            var val = nil < 5
-//            res = pika! + chu!
-            
             var cd = [CardData]()
             for i in 1...30 {
                 cd.append(CardData(id: i, title: "This is a great app", subTitle: "This is the app description"))
