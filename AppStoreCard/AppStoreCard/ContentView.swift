@@ -20,6 +20,11 @@ struct ContentView: View {
         
         
     }()
+    var currentDateString: String {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .full
+        return formatter.string(from: Date())
+    }
     @State private var active: Bool = false
     var body: some View {
         NavigationView {
@@ -28,11 +33,21 @@ struct ContentView: View {
                     ForEach(cardData) { cD in
                         Button(action: { self.pressed.toggle()
                         }) {
-                            NavigationLink(destination: CardView(title: cD.title, subTitle: cD.subTitle)) {
+                            NavigationLink(destination: ExpandedView(title: cD.title, subTitle: cD.subTitle)) {
                                 CardView(title: cD.title, subTitle: cD.subTitle)
                             }.buttonStyle(PlainButtonStyle())
                         }.buttonStyle(tapBounceButtonStyle())
                         .padding()
+                    }
+                }
+            }.navigationBarTitleDisplayMode(.automatic)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    VStack(alignment: .leading) {
+                        Text(currentDateString).font(.subheadline)
+                            .fontWeight(.light)
+                        Text("Today").font(.title)
+                            .fontWeight(.heavy)
                     }
                 }
             }
