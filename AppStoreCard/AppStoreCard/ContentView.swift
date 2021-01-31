@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var pressed: Bool = false
+    
     var cardData: [CardData] = {
         
         var cd = [CardData]()
@@ -25,19 +25,29 @@ struct ContentView: View {
         formatter.dateStyle = .full
         return formatter.string(from: Date())
     }
-    @State private var active: Bool = false
+    
+    @State var pickedNumber: Int = -1
+    @State var showDetail = false
+    @Namespace var namespace
+    
     var body: some View {
-        NavigationView {
-            ScrollView {
-                LazyVStack {
-                    ForEach(cardData) { cD in
-                        Button(action: { self.pressed.toggle()
-                        }) {
-                            NavigationLink(destination: ExpandedView(title: cD.title, subTitle: cD.subTitle)) {
-                                CardView(title: cD.title, subTitle: cD.subTitle)
-                            }.buttonStyle(PlainButtonStyle())
-                        }.buttonStyle(tapBounceButtonStyle())
-                        .padding()
+        if !showDetail {
+            NavigationView {
+                ScrollView {
+                    LazyVStack {
+                        ForEach(cardData) { cD in
+                            Button(action: {
+                                withAnimation {
+                                    pickedNumber = cD.id
+                                    showDetail = true
+                                }
+                                
+                            }) {
+                                CardView(title: cD.title, subTitle: "\(cD.subTitle) : \(cD.id)")
+                            }.buttonStyle(tapBounceButtonStyle())
+                            .padding()
+                            .matchedGeometryEffect(id: cD.id, in: namespace)
+                        }
                     }
                 }
             }.navigationBarTitleDisplayMode(.automatic)
@@ -51,12 +61,17 @@ struct ContentView: View {
                     }
                 }
             }
-            //        Got a slightly better performance in LazyVStack
-            //        List(cardData) { cD in
-            //            Button(action: { self.pressed.toggle() }) {
-            //                CardView(title: cD.title, subTitle: cD.subTitle)
-            //            }.buttonStyle(tapBounceButtonStyle())
-            //        }
+        }  else {
+            ZStack {
+                ExpandedView(title: cardData[pickedNumber].title, subTitle: cardData[pickedNumber].subTitle, cancelTapAction: {
+                    withAnimation {
+                        showDetail = false
+                    }
+                })
+                .padding()
+                .foregroundColor(.black)
+            }
+            .matchedGeometryEffect(id: pickedNumber, in: namespace)
         }
     }
 }
