@@ -8,28 +8,70 @@
 
 /* Begin PBXBuildFile section */
 		4177C7CB25C580A000AEB31A /* AppStoreCardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177C7CA25C580A000AEB31A /* AppStoreCardApp.swift */; };
-		4177C7CD25C580A000AEB31A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177C7CC25C580A000AEB31A /* ContentView.swift */; };
+		4177C7CD25C580A000AEB31A /* AppStoreCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177C7CC25C580A000AEB31A /* AppStoreCardView.swift */; };
 		4177C7CF25C580A000AEB31A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4177C7CE25C580A000AEB31A /* Assets.xcassets */; };
 		4177C7D225C580A000AEB31A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4177C7D125C580A000AEB31A /* Preview Assets.xcassets */; };
 		4177C7DB25C58BE800AEB31A /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177C7DA25C58BE800AEB31A /* CardView.swift */; };
+		41ACD65E25CE9A5200555627 /* AppStoreCardFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 41ACD65C25CE9A5200555627 /* AppStoreCardFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41ACD66125CE9A5200555627 /* AppStoreCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41ACD65A25CE9A5200555627 /* AppStoreCard.framework */; };
+		41ACD66225CE9A5200555627 /* AppStoreCard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 41ACD65A25CE9A5200555627 /* AppStoreCard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		41ACD66825CE9A7D00555627 /* ExpandedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CA9D5825C5D38C00049520 /* ExpandedView.swift */; };
+		41ACD66925CE9A7D00555627 /* AppStoreCardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177C7CA25C580A000AEB31A /* AppStoreCardApp.swift */; };
+		41ACD66A25CE9A7D00555627 /* AppStoreCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177C7CC25C580A000AEB31A /* AppStoreCardView.swift */; };
+		41ACD66C25CE9A8900555627 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177C7DA25C58BE800AEB31A /* CardView.swift */; };
 		41CA9D5925C5D38C00049520 /* ExpandedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CA9D5825C5D38C00049520 /* ExpandedView.swift */; };
 		41CA9D5C25C708AD00049520 /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CA9D5B25C708AD00049520 /* Sample.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		41ACD65F25CE9A5200555627 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4177C7BF25C5809F00AEB31A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41ACD65925CE9A5200555627;
+			remoteInfo = AppStoreCardFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		41ACD66625CE9A5200555627 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				41ACD66225CE9A5200555627 /* AppStoreCard.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		4177C7C725C580A000AEB31A /* AppStoreCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStoreCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4177C7C725C580A000AEB31A /* AppStoreCardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStoreCardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4177C7CA25C580A000AEB31A /* AppStoreCardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreCardApp.swift; sourceTree = "<group>"; };
-		4177C7CC25C580A000AEB31A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4177C7CC25C580A000AEB31A /* AppStoreCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreCardView.swift; sourceTree = "<group>"; };
 		4177C7CE25C580A000AEB31A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4177C7D125C580A000AEB31A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4177C7D325C580A000AEB31A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4177C7DA25C58BE800AEB31A /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		41ACD65A25CE9A5200555627 /* AppStoreCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppStoreCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41ACD65C25CE9A5200555627 /* AppStoreCardFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppStoreCardFramework.h; sourceTree = "<group>"; };
+		41ACD65D25CE9A5200555627 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41CA9D5825C5D38C00049520 /* ExpandedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedView.swift; sourceTree = "<group>"; };
 		41CA9D5B25C708AD00049520 /* Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4177C7C425C580A000AEB31A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41ACD66125CE9A5200555627 /* AppStoreCard.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41ACD65725CE9A5200555627 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,8 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				41CA9D5B25C708AD00049520 /* Sample.swift */,
-				41CA9D5825C5D38C00049520 /* ExpandedView.swift */,
 				4177C7C925C580A000AEB31A /* AppStoreCard */,
+				41ACD65B25CE9A5200555627 /* AppStoreCardFramework */,
 				4177C7C825C580A000AEB31A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,7 +94,8 @@
 		4177C7C825C580A000AEB31A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4177C7C725C580A000AEB31A /* AppStoreCard.app */,
+				4177C7C725C580A000AEB31A /* AppStoreCardApp.app */,
+				41ACD65A25CE9A5200555627 /* AppStoreCard.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,8 +103,9 @@
 		4177C7C925C580A000AEB31A /* AppStoreCard */ = {
 			isa = PBXGroup;
 			children = (
+				41CA9D5825C5D38C00049520 /* ExpandedView.swift */,
 				4177C7CA25C580A000AEB31A /* AppStoreCardApp.swift */,
-				4177C7CC25C580A000AEB31A /* ContentView.swift */,
+				4177C7CC25C580A000AEB31A /* AppStoreCardView.swift */,
 				4177C7CE25C580A000AEB31A /* Assets.xcassets */,
 				4177C7D325C580A000AEB31A /* Info.plist */,
 				4177C7D025C580A000AEB31A /* Preview Content */,
@@ -78,25 +122,65 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		41ACD65B25CE9A5200555627 /* AppStoreCardFramework */ = {
+			isa = PBXGroup;
+			children = (
+				41ACD65C25CE9A5200555627 /* AppStoreCardFramework.h */,
+				41ACD65D25CE9A5200555627 /* Info.plist */,
+			);
+			path = AppStoreCardFramework;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		41ACD65525CE9A5200555627 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41ACD65E25CE9A5200555627 /* AppStoreCardFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		4177C7C625C580A000AEB31A /* AppStoreCard */ = {
+		4177C7C625C580A000AEB31A /* AppStoreCardApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4177C7D625C580A000AEB31A /* Build configuration list for PBXNativeTarget "AppStoreCard" */;
+			buildConfigurationList = 4177C7D625C580A000AEB31A /* Build configuration list for PBXNativeTarget "AppStoreCardApp" */;
 			buildPhases = (
 				4177C7C325C580A000AEB31A /* Sources */,
 				4177C7C425C580A000AEB31A /* Frameworks */,
 				4177C7C525C580A000AEB31A /* Resources */,
+				41ACD66625CE9A5200555627 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41ACD66025CE9A5200555627 /* PBXTargetDependency */,
+			);
+			name = AppStoreCardApp;
+			productName = AppStoreCard;
+			productReference = 4177C7C725C580A000AEB31A /* AppStoreCardApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		41ACD65925CE9A5200555627 /* AppStoreCard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41ACD66325CE9A5200555627 /* Build configuration list for PBXNativeTarget "AppStoreCard" */;
+			buildPhases = (
+				41ACD65525CE9A5200555627 /* Headers */,
+				41ACD65625CE9A5200555627 /* Sources */,
+				41ACD65725CE9A5200555627 /* Frameworks */,
+				41ACD65825CE9A5200555627 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = AppStoreCard;
-			productName = AppStoreCard;
-			productReference = 4177C7C725C580A000AEB31A /* AppStoreCard.app */;
-			productType = "com.apple.product-type.application";
+			productName = AppStoreCardFramework;
+			productReference = 41ACD65A25CE9A5200555627 /* AppStoreCard.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -108,6 +192,9 @@
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					4177C7C625C580A000AEB31A = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					41ACD65925CE9A5200555627 = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
@@ -125,7 +212,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4177C7C625C580A000AEB31A /* AppStoreCard */,
+				4177C7C625C580A000AEB31A /* AppStoreCardApp */,
+				41ACD65925CE9A5200555627 /* AppStoreCard */,
 			);
 		};
 /* End PBXProject section */
@@ -140,6 +228,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		41ACD65825CE9A5200555627 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -148,14 +243,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				41CA9D5C25C708AD00049520 /* Sample.swift in Sources */,
-				4177C7CD25C580A000AEB31A /* ContentView.swift in Sources */,
+				4177C7CD25C580A000AEB31A /* AppStoreCardView.swift in Sources */,
 				41CA9D5925C5D38C00049520 /* ExpandedView.swift in Sources */,
 				4177C7DB25C58BE800AEB31A /* CardView.swift in Sources */,
 				4177C7CB25C580A000AEB31A /* AppStoreCardApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		41ACD65625CE9A5200555627 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41ACD66C25CE9A8900555627 /* CardView.swift in Sources */,
+				41ACD66825CE9A7D00555627 /* ExpandedView.swift in Sources */,
+				41ACD66925CE9A7D00555627 /* AppStoreCardApp.swift in Sources */,
+				41ACD66A25CE9A7D00555627 /* AppStoreCardView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		41ACD66025CE9A5200555627 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41ACD65925CE9A5200555627 /* AppStoreCard */;
+			targetProxy = 41ACD65F25CE9A5200555627 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		4177C7D425C580A000AEB31A /* Debug */ = {
@@ -277,6 +391,7 @@
 		4177C7D725C580A000AEB31A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +414,7 @@
 		4177C7D825C580A000AEB31A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -318,6 +434,62 @@
 			};
 			name = Release;
 		};
+		41ACD66425CE9A5200555627 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = FABQJ9SY29;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AppStoreCardFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.ravitripathi.AppStoreCardFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		41ACD66525CE9A5200555627 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = FABQJ9SY29;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AppStoreCardFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.ravitripathi.AppStoreCardFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -330,11 +502,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4177C7D625C580A000AEB31A /* Build configuration list for PBXNativeTarget "AppStoreCard" */ = {
+		4177C7D625C580A000AEB31A /* Build configuration list for PBXNativeTarget "AppStoreCardApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4177C7D725C580A000AEB31A /* Debug */,
 				4177C7D825C580A000AEB31A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41ACD66325CE9A5200555627 /* Build configuration list for PBXNativeTarget "AppStoreCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41ACD66425CE9A5200555627 /* Debug */,
+				41ACD66525CE9A5200555627 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

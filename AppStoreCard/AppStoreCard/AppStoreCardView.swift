@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+public struct AppStoreCardView: View {
     
     var cardData: [CardData] = {
         
@@ -30,7 +30,8 @@ struct ContentView: View {
     @State var showDetail = false
     @Namespace var namespace
     
-    var body: some View {
+    public init() {}
+    public var body: some View {
         if !showDetail {
             NavigationView {
                 ScrollView {
@@ -87,7 +88,7 @@ struct tapBounceButtonStyle: ButtonStyle {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        AppStoreCardView()
     }
 }
 
