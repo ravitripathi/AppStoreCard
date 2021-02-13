@@ -33,7 +33,7 @@ public struct AppStoreCardView: View {
     public init() {}
     public var body: some View {
         if !showDetail {
-            NavigationView {
+//            NavigationView {
                 ScrollView {
                     LazyVStack {
                         ForEach(cardData) { cD in
@@ -51,17 +51,18 @@ public struct AppStoreCardView: View {
                         }
                     }
                 }
-            }.navigationBarTitleDisplayMode(.automatic)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    VStack(alignment: .leading) {
-                        Text(currentDateString).font(.subheadline)
-                            .fontWeight(.light)
-                        Text("Today").font(.title)
-                            .fontWeight(.heavy)
-                    }
-                }
-            }
+//            }.navigationBarTitleDisplayMode(.inline)
+//            .navigationBarTitleDisplayMode(.automatic)
+//            .toolbar {
+//                ToolbarItem(placement: .navigationBarLeading) {
+//                    VStack(alignment: .leading) {
+//                        Text(currentDateString).font(.subheadline)
+//                            .fontWeight(.light)
+//                        Text("Today").font(.title)
+//                            .fontWeight(.heavy)
+//                    }
+//                }
+//            }
         }  else {
             ZStack {
                 ExpandedView(title: cardData[pickedNumber].title, subTitle: cardData[pickedNumber].subTitle, cancelTapAction: {
