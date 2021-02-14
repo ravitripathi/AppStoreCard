@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		412D4D5825D80DDA0093CC51 /* CardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412D4D5725D80DDA0093CC51 /* CardListView.swift */; };
 		412D4D6225D80FAC0093CC51 /* CardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412D4D5725D80DDA0093CC51 /* CardListView.swift */; };
+		412D4D6F25D821E30093CC51 /* iPadWidgetListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412D4D6E25D821E30093CC51 /* iPadWidgetListView.swift */; };
+		412D8C3F25D94031008CFA07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4177C7CE25C580A000AEB31A /* Assets.xcassets */; };
 		4177C7CB25C580A000AEB31A /* AppStoreCardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177C7CA25C580A000AEB31A /* AppStoreCardApp.swift */; };
 		4177C7CD25C580A000AEB31A /* AppStoreCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4177C7CC25C580A000AEB31A /* AppStoreCardView.swift */; };
 		4177C7CF25C580A000AEB31A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4177C7CE25C580A000AEB31A /* Assets.xcassets */; };
@@ -51,6 +53,7 @@
 
 /* Begin PBXFileReference section */
 		412D4D5725D80DDA0093CC51 /* CardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListView.swift; sourceTree = "<group>"; };
+		412D4D6E25D821E30093CC51 /* iPadWidgetListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPadWidgetListView.swift; sourceTree = "<group>"; };
 		4177C7C725C580A000AEB31A /* AppStoreCardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStoreCardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4177C7CA25C580A000AEB31A /* AppStoreCardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreCardApp.swift; sourceTree = "<group>"; };
 		4177C7CC25C580A000AEB31A /* AppStoreCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreCardView.swift; sourceTree = "<group>"; };
@@ -114,6 +117,7 @@
 				4177C7D025C580A000AEB31A /* Preview Content */,
 				4177C7DA25C58BE800AEB31A /* CardView.swift */,
 				412D4D5725D80DDA0093CC51 /* CardListView.swift */,
+				412D4D6E25D821E30093CC51 /* iPadWidgetListView.swift */,
 			);
 			path = AppStoreCard;
 			sourceTree = "<group>";
@@ -236,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				412D8C3F25D94031008CFA07 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 			files = (
 				41ACD66C25CE9A8900555627 /* CardView.swift in Sources */,
 				41ACD66825CE9A7D00555627 /* ExpandedView.swift in Sources */,
+				412D4D6F25D821E30093CC51 /* iPadWidgetListView.swift in Sources */,
 				412D4D5825D80DDA0093CC51 /* CardListView.swift in Sources */,
 				41ACD66925CE9A7D00555627 /* AppStoreCardApp.swift in Sources */,
 				41ACD66A25CE9A7D00555627 /* AppStoreCardView.swift in Sources */,

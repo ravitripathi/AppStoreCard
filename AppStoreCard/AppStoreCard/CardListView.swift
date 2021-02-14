@@ -14,7 +14,7 @@ public struct CardListView: View {
             NavigationLink(destination: AppStoreCardView()) {
                 Text("App Store Card")
             }
-            NavigationLink(destination: AppStoreCardView()) {
+            NavigationLink(destination: iPadWidgetListView()) {
                 Text("iPad Widget List")
             }
         }
