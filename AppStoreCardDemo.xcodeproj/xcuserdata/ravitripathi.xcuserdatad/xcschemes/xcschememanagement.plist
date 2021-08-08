@@ -4,20 +4,18 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>AppStoreCard.xcscheme_^#shared#^_</key>
+		<key>AppStoreCardDemo.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>10</integer>
+			<integer>0</integer>
 		</dict>
-		<key>AppStoreCardApp.xcscheme_^#shared#^_</key>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>525C687526C0039A00BA5294</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>8</integer>
-		</dict>
-		<key>AppStoreCardFramework.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>11</integer>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
